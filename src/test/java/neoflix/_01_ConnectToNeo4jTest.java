@@ -15,7 +15,7 @@ class _01_ConnectToNeo4jTest {
         assertNotNull(AppUtils.getNeo4jUri(), "neo4j uri defined");
         assertNotNull(AppUtils.getNeo4jUsername(), "username defined");
         assertNotNull(AppUtils.getNeo4jPassword(), "password defined");
-
+        
         Driver driver = AppUtils.initDriver();
         Assumptions.assumeTrue(driver != null);
         assertNotNull(driver, "driver instantiated");
